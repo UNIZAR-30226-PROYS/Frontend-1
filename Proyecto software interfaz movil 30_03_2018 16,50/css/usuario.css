@@ -1,0 +1,133 @@
+a, a:hover, a:focus {
+    color: white;
+    transition: all 0.3s;
+}
+
+.profile-mid {
+	float: left;
+	width: 33.333%;
+	text-align: center;
+}
+.profile-left {
+	float: left;
+	width: 33.3333%;
+	text-align: center;
+}
+.profile-right {
+	float: right;
+	width: 33.3333%;
+	text-align: center;
+}
+.container-fluid{ 
+	padding:11px 5px 11px 5px;
+	background: black;
+}
+	
+	
+.btn-dark {
+	background: black;
+	color: white;
+}
+
+.btn-dark:hover {
+     color: white;
+    background-color: DDE5FF;
+    border-color: #C7D1F3; 
+	
+}
+
+.lista_amigos{
+ padding-top: 10px;
+}
+
+.pantalla_usuario{
+	padding-top: 30px;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 175px;
+    max-width: 175px;
+    background: #2853DC;
+	color: white;
+    transition: all 0.3s;
+	
+}
+
+#sidebar.active {
+    margin-left: -175px;
+}
+
+#sidebar .sidebar-header {
+    padding: 50px;
+    background: #040815;
+}
+
+#sidebar ul.components {
+    padding: 20px 0px 15px;
+    border-bottom: 1px solid #47748b;
+	border-color: white;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background: #C7D1F3;
+}
+
+/* Centrar icono en el centro de la barra de navegacion */
+.navbar-brand {
+   transform: translateX(-50%);
+   left: 50%;
+	position: absolute;
+}
+
+	
+/* Para la flechita de opciones, no se que son estas cosas */	
+a[data-toggle="collapse"] {
+    position: relative;
+}
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+}
+ul ul a {
+    padding-left: 30px !important;
+}
+
+
+
+
+
+#content {
+    padding: 20px;
+    min-height: 300vh;
+	min-width: 50vh;
+    transition: all 0.3s;
+}
+
+
+.thumbnail{
+  background: transparent;
+}
+
+
+
+
+
+
+
