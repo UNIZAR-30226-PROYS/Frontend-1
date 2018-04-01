@@ -1,0 +1,150 @@
+#content {
+    padding: 20px;
+    min-height: 300vh;
+	min-width: 70vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    NAVIGATION BAR
+----------------------------------------------------- */
+
+.container-fluid{ 
+	padding:11px 5px 11px 5px;
+	background: black;
+}
+
+.profile-mid {
+	float: left;
+	width: 33.333%;
+	text-align: center;
+}
+.profile-left {
+	float: left;
+	width: 33.3333%;
+	text-align: center;
+}
+.profile-right {
+	float: right;
+	width: 33.3333%;
+	text-align: center;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 175px;
+    max-width: 175px;
+    background: #2853DC;
+	color: white;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -175px;
+}
+
+#sidebar .sidebar-header {
+    padding: 50px;
+    background: #040815;    
+    border-bottom: 1px solid white;
+}
+
+#sidebar ul.components {
+    padding: 20px 0px 15px;
+    border-bottom: 1px solid white;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block; 
+	color: white;
+}
+
+#sidebar ul li a:hover {
+    background: #C7D1F3; 
+	color: white;
+}
+
+/* Options arrow-down*/	
+a[data-toggle="collapse"] {
+    position: relative;
+}
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+}
+ul ul a {
+    padding-left: 30px !important;
+}
+
+/*	Button sube tu musica */
+.btn-dark {
+	background: black;
+	color: white;
+}
+
+.btn-dark:hover {
+     color: white;
+    background-color: DDE5FF;
+    border-color: #C7D1F3; 	
+}
+
+/* ---------------------------------------------------
+    Search button
+----------------------------------------------------- */
+
+form.search-button input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.search-button button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2853DC;	/* Blue */
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+}
+
+form.search-button button:hover {
+    background: #0b7dda;
+}
+
+form.search-button::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ---------------------------------------------------
+    Listas
+----------------------------------------------------- */
+
+.thumbnail:hover {
+   /* background-image: url('http://www.online-image-editor.com//styles/2014/images/example_image.png'); */
+    background-color: #2853DC;
+}
+.caption:hover {
+	color: white;
+}
+
+
+

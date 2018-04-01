@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bienvenido a Wolfic</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 ">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- Bootstrap CSS 4.0.0 -->
+		<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+		<!-- Our Custom CSS -->
+		<link rel="stylesheet" href="css/explorar.css">
+			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    Escuchando
+                </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#OpcionesSubmenu" data-toggle="collapse" aria-expanded="false">Opciones</a>
+                        <ul class="collapse list-unstyled" id="OpcionesSubmenu">
+                            <li><a href="#">Opc 1</a></li>
+                            <li><a href="#">Opc 2</a></li>
+                            <li><a href="#">Opc 3</a></li>
+                        </ul>
+                    </li>	
+                    <li>  <a href="listas.html">Listas </a></li>
+					<li>  <a href="artistas.html">Artistas</a></li>
+					<li>  <a href="podcasts.html">Podcasts </a></li>
+					<li>  <a href="amigos.html">Amigos</a></li>                 
+                </ul>
+				<div class="text-white text-center">
+					<button type="button" class="btn btn-dark">Sube tu musica</button>  
+				</div>
+            </nav>	 <!-- Sidebar Holder -->
+			
+            <!-- Page Content Holder -->
+            <div id="content">
+			
+				<!-- Navigation bar -->
+				<div class="container-fluid">	<!-- warp -->
+					<div class="profile-left">
+						 <!--  <a href="#menu" class="menu-link "><i class="glyphicon glyphicon-list" style="font-size:20px;"></i></a> -->
+						<button type="button" id="sidebarCollapse" class="btn btn-default">
+							<i class="glyphicon glyphicon-list" style="font-size:13px;"></i>
+						</button>
+					</div>
+					<div class="profile-mid">		
+						<a class="pro-link" href="explorar.html">	<!-- Brand/logo -->
+							<img src="images\wolf.jpg" style="height:30px;"  alt="Wolfic">
+						</a>
+					</div>
+					<div class="profile-right">
+						<a href="#" > <i class="glyphicon glyphicon-user" style="font-size:19px; color:white; padding-top: 5px"></i></a>
+					</div>
+				</div>	
+					
+				<div class="row">
+					<div class=" col-md-2  col-md-offset-5 col-sm-3  col-sm-offset-2 col-xs-4 col-xs-offset-2" >
+						<h3>Explorar</h3>
+					</div>
+					<div class="pull-right">
+						<form class="search-button" action="/action_page.php" style="max-width:170px; padding-bottom:15px; padding-top:15px;padding-right:15px;">
+							<input type="text" placeholder="Search.." name="search2">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-4 col-sm-3 col-md-2">
+						<h4>Listas guardadas</h4>
+					</div>
+					<div class="pull-right">
+						 <button type="submit" class="btn btn-link">
+							<span class="glyphicon glyphicon-menu-right" style="font-size:20px; padding-right:10px;"></span>
+						</button>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-3 profile-left ">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion lista 1</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+					  <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3  profile-mid">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion lista 2</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-3  profile-right">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion lista 3</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-4 col-sm-3 col-md-2">
+						<h4>Listas populares</h4>
+					</div>
+					<div class="pull-right">
+						 <button type="submit" class="btn btn-link">
+							<span class="glyphicon glyphicon-menu-right" style="font-size:20px; padding-right:10px;"></span>
+						</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-3  profile-left">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion lista popular 1</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-3  profile-mid">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion lista popular 2</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-3  profile-right">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion lista popular 3</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-4 col-sm-3 col-md-2">
+						<h4>Listas populares</h4>
+					</div>
+					<div class="pull-right">
+						 <button type="submit" class="btn btn-link">
+							<span class="glyphicon glyphicon-menu-right" style="font-size:20px; padding-right:10px;"></span>
+						</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-3  profile-left">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion Podcast guardado 1</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-3  profile-mid">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion Podcast guardado 2</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-3  profile-right">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion Podcast guardado 3</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-4 col-sm-3 col-md-2">
+						<h4>Podcasts popular</h4>
+					</div>
+					<div class="pull-right">
+						 <button type="submit" class="btn btn-link">
+							<span class="glyphicon glyphicon-menu-right" style="font-size:20px; padding-right:10px;"></span>
+						</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-3  profile-left">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion Podcast popular 1</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-3  profile-mid">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion Podcast popular 2</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-3  profile-right">
+					  <div class="thumbnail">
+						<a href="" target="_self">
+						  <img src="images\wolf.jpg" alt="" style="width:20%">
+						  <div class="caption">
+							<p>Descripcion Podcast popular 3</p>
+						  </div>
+						</a>
+					  </div>
+					</div>
+				</div>
+			</div>	<!-- Page Content Holder -->
+		</div>	 <!-- Wraper -->
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
