@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bienvenido a Wolfic</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 ">
+		
+		<!-- Bootstrap CSS -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  -->
+
+		<!-- Bootstrap CSS 4.0.0 -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+
+		<!-- Our Custom CSS -->
+		<link rel="stylesheet" href="css/usuario.css">
+			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    Escuchando
+                </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#OpcionesSubmenu" data-toggle="collapse" aria-expanded="false">Opciones</a>
+                        <ul class="collapse list-unstyled fa-chevron-right" id="OpcionesSubmenu">
+                            <li><a href="#">Opc 1</a></li>
+                            <li><a href="#">Opc 2</a></li>
+                            <li><a href="#">Opc 3</a></li>
+                        </ul>
+                    </li>	
+                    <li>  <a href="listas.html">Listas </a></li>
+					<li>  <a href="artistas.html">Artistas</a></li>
+					<li>  <a href="podcasts.html">Podcasts </a></li>
+					<li>  <a href="amigos.html">Amigos</a></li>                 
+                </ul>
+				<div class="text-white text-center">
+					<button type="button" class="btn btn-dark">Sube tu musica</button>  
+				</div>
+            </nav>	 <!-- Sidebar Holder -->
+			
+            <!-- Page Content Holder -->
+			<div class="container-fluid">	
+				<!-- Navigation bar -->			
+				<nav class="navbar navbar-dark navbar-custom justify-content-between">
+				 		<button type="button" id="sidebarCollapse" class="btn btn-default">
+							<i class="fa fa-list" style="font-size:13px;"></i>
+						</button>
+					<a class="pro-link" href="explorar.html">	<!-- Brand/logo -->
+						<img src="images\wolf.jpg" style="height:30px;"  alt="Wolfic">
+					</a>
+					 <a href="#" > <i class="fa fa-user" style="font-size:19px; color:white; padding-top: 5px"></i></a>
+				</nav>	
+				
+				 <div class="row pantalla_usuario">
+					<div class="col">
+						<button type="button" class="btn btn-primary" style="background: #2853DC;  color:white;">Sube<br/>tu<br/>musica</button>
+					</div>
+					<div class="col">
+						<div class="img-responsive text-center">
+							<img src="images\user.svg" style="height: 80px;" alt="Usuario">
+						</div>
+					</div>
+					<div class="col">
+						<button type="button" class="btn btn-default float-right">
+							<span class="fa fa-cog" style="font-size:25px; padding:15px;" ></span>
+						</button>
+					</div>
+				 </div>
+				
+				<div class="media pantalla_usuario">
+					<div class="media-body">
+						<h3 class="media-heading"> Amigos </h3>
+					</div>
+					<div class="media-right">
+						<button type="button" class="btn btn-default ">
+							<span class="fa fa-user-plus" style="font-size:30px; "></span>
+						</button>
+					</div>
+				</div>
+				
+				<div class="list-group lista_amigos">			
+					<a href="#" class="list-group-item list-group-item-action">
+						<div class="media">	
+							<div class="media-left" style="padding-right:15px">
+								<img src="images\wolf.jpg" style="width:30px;" alt="...">
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading">Nombre  1</h6>
+								<h6 class="media-heading">Cancion 1</h6>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action">
+						<div class="media">	
+							<div class="media-left" style="padding-right:15px">
+								<img src="images\wolf.jpg" style="width:30px;" alt="...">
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading">Nombre  1</h6>
+								<h6 class="media-heading">Cancion 1</h6>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>	<!-- Page Content Holder -->
+		</div>	 <!-- Wraper -->
+		
+        <!-- jQuery CDN -->
+			<!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>  -->
+        <!-- Bootstrap Js CDN -->
+			<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  -->
+		
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
