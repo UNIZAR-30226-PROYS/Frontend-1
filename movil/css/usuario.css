@@ -7,51 +7,70 @@
     NAVIGATION BAR
 ----------------------------------------------------- */
 
-.navbar-custom {
+#topbar {
     background-color: black;
 }
-	
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
 #sidebar {
-    min-width: 175px;
-    max-width: 175px;
-	min-height: calc(100vh);
+    max-width: 250px;
+    min-height: calc(100vh);
     background: #2853DC;
-	color: white;
-    transition: all 0.3s;
-}
-
-#sidebar.active {
-    margin-left: -175px;
+    color: white;
 }
 
 #sidebar .sidebar-header {
     padding: 50px;
     background: #040815;
-	border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 #sidebar ul.components {
     padding: 20px 0px 15px;
-	border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 #sidebar ul li a {
     padding: 10px;
     font-size: 1.1em;
     display: block;
-		color: white;
+    color: white;
+    text-underline: none;
 }
 
 #sidebar ul li a:hover {
     background: #C7D1F3;
-	color: white;
+    color: white;
+    text-underline: none;
 }
 
-/* Options arrow-down*/		
+.sidebar {
+    position: fixed;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.sidebar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+/* Options arrow-down*/
 a[data-toggle="collapse"] {
     position: relative;
 }
@@ -59,7 +78,7 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     display: block;
     position: absolute;
     right: 20px;
-	content:"\f078";
+    content:"\f078";
     font-family: FontAwesome;
 }
 
@@ -69,14 +88,14 @@ ul ul a {
 
 /*	Button sube tu musica */
 .btn-dark {
-	background: black;
-	color: white;
+    background: black;
+    color: white;
 }
 
 .btn-dark:hover {
-     color: white;
-    background-color: DDE5FF;
-    border-color: #C7D1F3; 	
+    color: white;
+    background-color: #DDE5FF;
+    border-color: #C7D1F3;
 }
 
 /* ---------------------------------------------------

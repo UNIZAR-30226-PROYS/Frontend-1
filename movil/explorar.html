@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<title>Bienvenido a Wolfic</title>
 		<meta charset="utf-8">
@@ -8,32 +8,27 @@
 		<!-- Bootstrap CSS 4.0.0 -->
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
 
-		<!-- Our Custom CSS -->
+		<!-- CSS -->
 		<link rel="stylesheet" href="css/explorar.css">
-			
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <style>
 
-        </style>
+        <!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-        <nav class="navbar navbar-dark sticky-top bg-dark navbar-custom justify-content-between">
+        <!-- Cabecera y sidebar fijos -->
+        <nav id="topbar" class="navbar sticky-top">
             <span id="sidebarCollapse" style="font-size:20px; color:white">
-                &#9776;
+                &#9776; <!-- Icono de side-menu -->
             </span>
-                <a class="pro-link" href="explorar.html">	<!-- Brand/logo -->
-                    <img src="images\wolf.jpg" style="height:30px;"  alt="Wolfic">
+                <a href="explorar.html">	<!-- Brand/logo -->
+                    <img src="images/wolf.jpg" style="height:30px;"  alt="Wolfic">
                 </a>
-            <a href="#" > <i class="fa fa-user" style="font-size:19px; color:white; padding-top: 5px"></i></a>
+            <a href="usuario.html" > <i class="fa fa-user pt-1" style="font-size:20px; color:white;"></i></a>
         </nav>
 
         <div id="sidebar" class="sidebar d-none" style="width: 250px;">
             <div class="sidebar-header">
-                <p>Escuchando</p>
+                <p class="text-center mx-auto">Escuchando</p>
             </div>
             <ul class="list-unstyled components">
                 <li>
@@ -50,30 +45,31 @@
                 <li>  <a href="amigos.html">Amigos</a> </li>
             </ul>
             <div class="text-white text-center">
-            <button type="button" class="btn btn-dark">Sube tu musica</button>
+            <button type="button" class="btn btn-dark">Sube tu música</button>
             </div>
         </div>
 
+        <!-- CONTENIDO DE LA VISTA -->
         <div class="container">
 
-
-            <h2 class="text-left pt-1">Explorar</h2>
+            <!-- Titulo de la pantalla -->
+            <h2 class="text-left pt-2">Explorar</h2>
             <div class="row pt-1">
-            <div class="col-md-4 col-sm-4" style="text-align:right;">
-                <form class="search-button">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Buscar ...">
-                            <span class="input-group-btn search-button">
-                                    <button type="submit" class="btn btn-secondary">
-                                        <span class="fa fa-search" style="font-size:20px;"></span>
-                                    </button>
-                                </span>
+                <div class="col">
+                    <form class="search-button">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar ...">
+                                <span class="input-group-btn search-button">
+                                        <button type="submit" class="btn btn-secondary">
+                                            <span class="fa fa-search" style="font-size:20px;"></span>
+                                        </button>
+                                    </span>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
 
         <div class="row">
             <div class="col-auto mr-auto">
@@ -89,7 +85,7 @@
             <div class="col">
                 <div class="img-thumbnail">
                     <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
                             <p>Descripcion lista 1</p>
                         </div>
@@ -248,18 +244,15 @@
         </div>
     </div>
 
-        <script>
-            $(document).ready(function () {
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar').toggleClass('d-none');
-                });
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('d-none');
             });
-        </script>
-
-        <!-- jQuery CDN -->
-			<!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>  -->
-        <!-- Bootstrap Js CDN -->
-			<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  -->
-
+        });
+    </script>
     </body>
 </html>

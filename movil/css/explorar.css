@@ -7,7 +7,7 @@
     NAVIGATION BAR
 ----------------------------------------------------- */
 
-.navbar-custom {
+#topbar {
     background-color: black;
 }
 
@@ -20,12 +20,11 @@
 	min-height: calc(100vh);
     background: #2853DC;
 	color: white;
-    transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
     padding: 50px;
-    background: #040815;    
+    background: #040815;
     border-bottom: 1px solid white;
 }
 
