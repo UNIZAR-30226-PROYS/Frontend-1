@@ -25,7 +25,7 @@
             <a href="usuario.html" > <i class="fa fa-user pt-1" style="font-size:20px; color:white;"></i></a>
         </nav>
 
-        <div id="sidebar" class="sidebar d-none" style="width: 250px;">
+        <div id="sidebar" class="sidebar d-none">
             <div class="sidebar-header">
                 <p class="text-center mx-auto">Escuchando</p>
             </div>
@@ -108,8 +108,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script>
             $(document).ready(function () {
+                $('#sidebar').hide();
+                $('#sidebar').toggleClass("d-none");
                 $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar').toggleClass('d-none');
+                    $("#sidebar").animate({width:'toggle'},200);
                 });
             });
         </script>

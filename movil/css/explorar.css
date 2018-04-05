@@ -16,7 +16,7 @@
 ----------------------------------------------------- */
 
 #sidebar {
-    max-width: 250px;
+    width: 70%;
 	min-height: calc(100vh);
     background: #2853DC;
 	color: white;
