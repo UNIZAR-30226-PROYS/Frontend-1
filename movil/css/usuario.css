@@ -98,26 +98,11 @@ ul ul a {
     border-color: #C7D1F3;
 }
 
-/* ---------------------------------------------------
-    Pantalla usuario
------------------------------------------------------ */
-.pantalla_usuario{
-	padding: 30px 10px 20px 10px;
-}
-
  .btn-default:hover {
     color: white;
 	background-color: #2853DC;	/* Blue */
     border-color: #285e8e; /*set the color you want here*/
 }
-/* ---------------------------------------------------
-    Lista de amigos
------------------------------------------------------ */
-
-.lista_amigos{
- padding-top: 10px;
-}
-
 
 
 
