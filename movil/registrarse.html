@@ -83,7 +83,7 @@
 					<input type="password" class="form-control" id="confirmar_contrasenya" placeholder="*****" required>
 					<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
 				</div>
-				
+				<!---
 				 <div class="form-row">
 					<div class="form-group col-md-4">
 					  <label for="dia">Dia</label>
@@ -157,13 +157,22 @@
 						<option>Prefiero no contestar</option>
 					</select>
 				 </div>
-				 
+				 --->
 				<div class="form-group">
 					<label for="correo">Direccion de correo</label>
 					<input type="email" class="form-control" id="correo" placeholder="user@mail .." required>
 					<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
 				</div>
-				  
+
+				<div class="form-group">
+					<label for="visperfil">Visibilidad del perfil</label>
+					<select class="form-control" id="visperfil" required>
+						<option value="" selected disabled>Seleccione la visibilidad de su perfil</option>
+						<option>Privado</option>
+						<option>Público</option>
+					</select>
+				</div>
+
 				<div class="form-group">
 					<div class="form-check">
 						<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -172,7 +181,8 @@
 						</label>
 					</div>
 				</div>
-				
+
+
 				<button type="submit" class="btn btn-primary">Enviar</button>
 				
 			</form>			
