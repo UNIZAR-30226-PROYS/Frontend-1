@@ -22,6 +22,18 @@
 	color: white;
 }
 
+@media (min-width: 768px) {
+	#sidebar { width: 50% ; 	}
+}
+
+@media (min-width: 970px) {
+	#sidebar {	width: 40% ;	}
+}
+
+@media (min-width: 1170px) {
+	#sidebar {	width: 30% ;	}
+}
+
 #sidebar .sidebar-header {
     padding: 50px;
     background: #040815;
