@@ -79,25 +79,6 @@ body{
     font-size:20px;
 }
 
-#socialbar ul.components {
-    padding: 20px 0px 15px;
-    border-bottom: 1px solid white;
-}
-
-#socialbar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block; 
-	color: white;
-    text-underline: none;
-}
-
-#socialbar ul li a:hover {
-    background: #C7D1F3; 
-	color: white;
-    text-underline: none;
-}
-
 /* socialbar navigation */
 .socialbar {
     padding-left: 0;
