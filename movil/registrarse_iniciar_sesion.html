@@ -50,7 +50,10 @@
         </div>
 
         <!-- CONTENIDO DE LA VISTA -->
-        <div class="container py-4 ">
+        <div class="container mb-3">
+			<div class="pt-1">
+                <img class="d-block mx-auto" src="images/wolfsound.png" style="max-width: 200px"/>
+            </div>
 
 			<!--  https://getbootstrap.com/docs/4.0/components/navs/ -->
 			<ul class="nav nav-pills nav-fill" id="pills-tab" >
@@ -67,7 +70,7 @@
 				<!-- Iniciar Sesion -->
 				<div class="tab-pane fade show active" id="iniciar-sesion" role="tabpanel" aria-labelledby="iniciar-sesion-tab">
 					<form class="needs-validation" action="/action_page.php" novalidate>
-						<h3 class="text-center py-3">Iniciar sesion en Wolfic</h3>
+						<h4 class="text-center py-3">Iniciar sesión en WolfSound</h4>
 						
 						<div class="form-group">
 							<label for="nombre_usuario">Nombre de usuario</label>
@@ -80,7 +83,14 @@
 							<input type="password" class="form-control" id="contrasenya" placeholder="*****" required>
 							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
 						</div>
-						<button type="submit" class="btn btn-primary">Iniciar sesion</button>
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="submit" class="col btn btn-primary ">Iniciar sesión</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="reset" class="col btn btn-outline-primary">Limpiar</button>
+                            </div>
+                        </div>
 					</form>	
 				</div>
 			
@@ -88,7 +98,7 @@
 				<div class="tab-pane fade" 	id="registrarse" role="tabpanel" aria-labelledby="registrarse-tab">
 		
 					<form class="needs-validation" action="/action_page.php" novalidate>
-						<h3 class="text-center py-3">Registrarse en Wolfic</h3>
+						<h4 class="text-center py-3">Registrarse en WolfSound</h4>
 						<label for="nombre">Nombre</label>
 						<div class="form-group">
 							 <div class="form-row">
@@ -211,12 +221,19 @@
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
 								<label class="form-check-label" for="invalidCheck">
-									Acepto los terminos y las condiciones
+									Acepto los <a href="#">terminos y condiciones</a> de uso.
 								</label>
 							</div>
 						</div>
 
-						<button type="submit" class="btn btn-primary">Enviar</button>
+                        <div class="row">
+                            <div class="mx-auto col-6">
+                                <button type="submit" class="col btn btn-primary ">Enviar</button>
+                            </div>
+                            <div class="mx-auto col-6">
+                                <button type="reset" class="col btn btn-outline-primary">Limpiar</button>
+                            </div>
+                        </div>
 					</form>
 				</div>
 			</div>
