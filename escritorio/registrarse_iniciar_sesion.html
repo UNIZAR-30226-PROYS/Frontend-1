@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Bienvenido a Wolfic</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 ">
+
+		<!-- Bootstrap CSS 4.0.0 -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/registrarse_iniciar_sesion.css">
+
+        <!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+        <!-- Cabecera y sidebar fijos -->
+        <nav id="topbar" class="navbar sticky-top">
+            <span id="sidebarCollapse" style="font-size:20px; color:white">
+                &#9776; <!-- Icono de side-menu -->
+            </span>
+                <a href="explorar.html">	<!-- Brand/logo -->
+                    <img src="images/wolfsound-white.png" style="height:40px;"  alt="Wolfic">
+                </a>
+            <a href="usuario.html" > <i class="fa fa-user pt-1" style="font-size:20px; color:white;"></i></a>
+        </nav>
+
+        <div id="sidebar" class="sidebar d-none">
+            <div class="sidebar-header">
+                <p class="text-center mx-auto">Escuchando</p>
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#OpcionesSubmenu" data-toggle="collapse" aria-expanded="false">Opciones</a>
+                    <ul class="collapse list-unstyled" id="OpcionesSubmenu">
+                        <li><a href="#">Opc 1</a></li>
+                        <li><a href="#">Opc 2</a></li>
+                        <li><a href="#">Opc 3</a></li>
+                     </ul>
+                </li>
+				<li><a href="listas.html">Mis listas</a></li>
+				<li><a href="lista.html">Mi audio</a></li>
+				<li><a href="suscripciones.html">Suscripciones</a></li>
+            </ul>
+            <div class="text-white text-center">
+            <button type="button" class="btn btn-dark">Sube tu música</button>
+            </div>
+        </div>
+
+        <!-- CONTENIDO DE LA VISTA -->
+        <div class="container mb-3">
+			<div class="pt-1">
+                <img class="d-block mx-auto" src="images/wolfsound.png" style="max-width: 200px"/>
+            </div>
+
+			<!--  https://getbootstrap.com/docs/4.0/components/navs/ -->
+			<ul class="nav nav-pills nav-fill" id="pills-tab" >
+				<li class="nav-item">
+					<a class="nav-link active" id="iniciar-sesion-tab" data-toggle="pill" href="#iniciar-sesion" role="tab" aria-controls="iniciar-sesion" aria-selected="true">Iniciar Sesion</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="registrarse-tab" data-toggle="pill" href="#registrarse" role="tab" aria-controls="registrarse" aria-selected="false">Registrarse</a>
+				</li>
+			</ul>
+
+			<div class="tab-content" id="myTabContent"> 		<!-- Sino aparece uno debajo de otro -->
+			
+				<!-- Iniciar Sesion -->
+				<div class="tab-pane fade show active" id="iniciar-sesion" role="tabpanel" aria-labelledby="iniciar-sesion-tab">
+					<form class="needs-validation" action="/action_page.php" novalidate>
+						<h4 class="text-center py-3">Iniciar sesión en WolfSound</h4>
+						
+						<div class="form-group">
+							<label for="nombre_usuario">Nombre de usuario</label>
+							<input type="text" class="form-control" id="nombre_usuario" placeholder="usuario_123" required>
+							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
+						</div>
+							
+						<div class="form-group">
+							<label for="contrasenya">Contraseña</label>
+							<input type="password" class="form-control" id="contrasenya" placeholder="*****" required>
+							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
+						</div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="submit" class="col btn btn-primary ">Iniciar sesión</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="reset" class="col btn btn-outline-primary">Limpiar</button>
+                            </div>
+                        </div>
+					</form>	
+				</div>
+			
+				<!-- Registrarse -->
+				<div class="tab-pane fade" 	id="registrarse" role="tabpanel" aria-labelledby="registrarse-tab">
+		
+					<form class="needs-validation" action="/action_page.php" novalidate>
+						<h4 class="text-center py-3">Registrarse en WolfSound</h4>
+						<label for="nombre">Nombre</label>
+						<div class="form-group">
+							 <div class="form-row">
+								<div class="col-6">
+									<input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+								</div>
+								<div class="col">
+									<input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
+								</div>
+							 </div>
+						</div>
+						<div class="form-group">
+							<label for="nombre_usuario">Nombre de usuario</label>
+							<input type="text" class="form-control" id="nombre_usuario" placeholder="usuario_123" required>
+							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
+						</div>
+						
+						<div class="form-group">
+							<label for="contrasenya">Contraseña</label>
+							<input type="password" class="form-control" id="contrasenya" placeholder="*****" required>
+							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
+						</div>
+						
+						<div class="form-group">
+							<label for="confirmar_contrasenya"> Confirmar Contraseña</label>
+							<input type="password" class="form-control" id="confirmar_contrasenya" placeholder="*****" required>
+							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
+						</div>
+						<!---
+						 <div class="form-row">
+							<div class="form-group col-md-4">
+							  <label for="dia">Dia</label>
+							  <select id="dia" class="form-control" required>
+								<option value="" selected disabled>Dia</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="11">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>	
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+							  </select>
+							  <div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
+							</div>
+							<div class="form-group col-md-4">
+							  <label for="mes">Mes</label>
+							  <select id="mes" class="form-control" required>
+								<option value="" selected disabled>Mes</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="11">12</option>
+							  </select>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="anyo">Año</label>
+								<input type="year" class="form-control" id="anyo" placeholder="Año" required>
+							</div>
+						  </div>
+						  
+						<div class="form-group">
+							<label for="genero">Género</label>
+							<select class="form-control" id="genero" placeholder="Año" required>
+								<option value="" selected disabled>Seleccione su género</option>
+								<option>Masculino</option>
+								<option>Femenino</option>
+								<option>Otro</option>
+								<option>Prefiero no contestar</option>
+							</select>
+						 </div>
+						 --->
+						<div class="form-group">
+							<label for="correo">Direccion de correo</label>
+							<input type="email" class="form-control" id="correo" placeholder="user@mail .." required>
+							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
+						</div>
+
+						<div class="form-group">
+							<label for="visperfil">Visibilidad del perfil</label>
+							<select class="form-control" id="visperfil" required>
+								<option value="" selected disabled>Seleccione la visibilidad de su perfil</option>
+								<option>Privado</option>
+								<option>Público</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+								<label class="form-check-label" for="invalidCheck">
+									Acepto los <a href="#">terminos y condiciones</a> de uso.
+								</label>
+							</div>
+						</div>
+
+                        <div class="row">
+                            <div class="mx-auto col-6">
+                                <button type="submit" class="col btn btn-primary ">Enviar</button>
+                            </div>
+                            <div class="mx-auto col-6">
+                                <button type="reset" class="col btn btn-outline-primary">Limpiar</button>
+                            </div>
+                        </div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sidebar').hide();
+            $('#sidebar').toggleClass("d-none");
+            $('#sidebarCollapse').on('click', function () {
+                $("#sidebar").animate({width:'toggle'},200);
+            });
+        });
+    </script>
+	
+	<script>	
+		/* Derechos de autor  : https://getbootstrap.com/docs/4.0/components/forms/#validation */
+		
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function() {
+		  'use strict';
+		  window.addEventListener('load', function() {
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+			var forms = document.getElementsByClassName('needs-validation');
+			// Loop over them and prevent submission
+			var validation = Array.prototype.filter.call(forms, function(form) {
+			  form.addEventListener('submit', function(event) {
+				if (form.checkValidity() === false) {
+				  event.preventDefault();
+				  event.stopPropagation();
+				}
+				form.classList.add('was-validated');
+			  }, false);
+			});
+		  }, false);
+		})();
+	</script>
+    </body>
+</html>
