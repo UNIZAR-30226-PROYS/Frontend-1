@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<title>Bienvenido a Wolfic</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <head>
+        <title>Bienvenido a Wolfic</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 ">
 
-		<!-- Bootstrap CSS 4.0.0 -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+        <!-- Bootstrap CSS 4.0.0 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-		<!-- CSS -->
-		<link rel="stylesheet" href="css/explorar.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/explorar.css">
 
         <!-- Font Awesome CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
-	<body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
         <!-- Cabecera y sidebar fijos -->
         <nav id="topbar" class="navbar sticky-top">
             <span id="sidebarCollapse" style="font-size:20px; color:white">
                 &#9776; <!-- Icono de side-menu -->
             </span>
-                <a href="explorar.html">	<!-- Brand/logo -->
-                    <img src="images/wolf.jpg" style="height:30px;"  alt="Wolfic">
-                </a>
-            <a href="usuario.html" > <i class="fa fa-user pt-1" style="font-size:20px; color:white;"></i></a>
+            <a href="explorar.html">    <!-- Brand/logo -->
+                <img src="images/wolfsound-white.png" style="height:40px;" alt="Wolfic">
+            </a>
+            <a href="usuario.html"> <i class="fa fa-user pt-1" style="font-size:20px; color:white;"></i></a>
         </nav>
 
         <div id="sidebar" class="sidebar d-none">
@@ -37,34 +37,33 @@
                         <li><a href="#">Opc 1</a></li>
                         <li><a href="#">Opc 2</a></li>
                         <li><a href="#">Opc 3</a></li>
-                     </ul>
+                    </ul>
                 </li>
-                <li>  <a href="listas.html">Listas </a> </li>
-                <li>  <a href="artistas.html">Artistas</a> </li>
-                <li>  <a href="podcasts.html">Podcasts </a> </li>
-                <li>  <a href="amigos.html">Suscripciones</a> </li>
+                <li><a href="listas.html">Mis listas</a></li>
+                <li><a href="lista.html">Mi audio</a></li>
+                <li><a href="suscripciones.html">Suscripciones</a></li>
             </ul>
             <div class="text-white text-center">
-            <button type="button" class="btn btn-dark">Sube tu música</button>
+                <button type="button" class="btn btn-dark">Sube tu música</button>
             </div>
         </div>
 
         <!-- CONTENIDO DE LA VISTA -->
-        <div class="container">
+        <div class="container mb-3">
 
             <!-- Titulo de la pantalla -->
             <h2 class="text-left pt-2">Explorar</h2>
             <div class="row pt-1">
                 <div class="col">
-                    <form class="search-button">
+                    <form class="search-button" action="resultados.html">
                         <div class="form-group">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Buscar ...">
                                 <span class="input-group-btn search-button">
-                                        <button type="submit" class="btn btn-secondary">
-                                            <span class="fa fa-search" style="font-size:20px;"></span>
-                                        </button>
-                                    </span>
+                                    <button type="submit" class="btn btn-secondary">
+                                        <span class="fa fa-search" style="font-size:20px;"  ></span>
+                                    </button>
+                                </span>
                             </div>
                         </div>
                     </form>
@@ -75,39 +74,39 @@
             <div class="col-auto mr-auto">
                 <h4>Mis listas</h4>
             </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-link">
+            <div class="float-right mr-3">
+                <a href="listas.html"  class="btn btn-link" role="button" >
                     <span class="fa fa-chevron-right" style="font-size:20px;"></span>
-                </button>
+                </a>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <div class="img-thumbnail">
-                    <a href="" target="_self">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
+                    <a href="lista.html" target="_self">
                         <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion lista 1</p>
+                            <p>Nombre lista 1</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col">
-                <div class="img-thumbnail">
-                    <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
+                    <a href="lista.html" target="_self">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion lista 2</p>
+                            <p>Nombre lista 2</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col">
-                <div class="img-thumbnail">
-                    <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
+                    <a href="lista.html" target="_self">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion lista 3</p>
+                            <p>Nombre lista 3</p>
                         </div>
                     </a>
                 </div>
@@ -118,39 +117,39 @@
             <div class="col-auto mr-auto">
                 <h4>Listas recomendadas</h4>
             </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-link">
+            <div class="float-right mr-3">
+                <a href="listas.html"  class="btn btn-link" role="button" >
                     <span class="fa fa-chevron-right" style="font-size:20px;"></span>
-                </button>
+                </a>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <div class="img-thumbnail">
-                    <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
+                    <a href="lista.html" target="_self">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion lista recomendada 1</p>
+                            <p>Nombre lista rec. 1</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col">
-                <div class="img-thumbnail">
-                    <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
+                    <a href="lista.html" target="_self">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion lista recomendada 2</p>
+                            <p>Nombre lista rec. 2</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col">
-                <div class="img-thumbnail">
-                    <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
+                    <a href="lista.html" target="_self">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion lista recomendada 3</p>
+                            <p>Nombre lista rec. 3</p>
                         </div>
                     </a>
                 </div>
@@ -161,39 +160,39 @@
             <div class="col-auto mr-auto">
                 <h4>Mi audio</h4>
             </div>
-            <div class="col-auto">
+            <div class="float-right mr-3">
                 <button type="submit" class="btn btn-link">
                     <span class="fa fa-chevron-right" style="font-size:20px;"></span>
                 </button>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <div class="img-thumbnail">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
                     <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion Mi audio 1</p>
+                            <p>Nombre Mi audio 1</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col">
-                <div class="img-thumbnail">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
                     <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion Mi audio 2</p>
+                            <p>Nombre Mi audio 2</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col">
-                <div class="img-thumbnail">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
                     <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion Mi audio 3</p>
+                            <p>Nombre Mi audio 3</p>
                         </div>
                     </a>
                 </div>
@@ -204,39 +203,39 @@
             <div class="col-auto mr-auto">
                 <h4>Audio recomendado</h4>
             </div>
-            <div class="col-auto">
+            <div class="float-right mr-3">
                 <button type="submit" class="btn btn-link">
                     <span class="fa fa-chevron-right" style="font-size:20px;"></span>
                 </button>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <div class="img-thumbnail">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
                     <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion audio recomendado 1</p>
+                            <p>Nombre audio rec. 1</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col">
-                <div class="img-thumbnail">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
                     <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion audio recomendado 2</p>
+                            <p>Nombre audio rec. 2</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col">
-                <div class="img-thumbnail">
+            <div class="col-4">
+                <div class="img-thumbnail h-100">
                     <a href="" target="_self">
-                        <img src="images\wolf.jpg" alt="" style="width:20%">
+                        <img src="images/wolf.jpg" alt="" style="width:20%">
                         <div class="caption">
-                            <p>Descripcion audio recomendado 3</p>
+                            <p>Nombre audio rec. 3</p>
                         </div>
                     </a>
                 </div>
@@ -252,7 +251,7 @@
             $('#sidebar').hide();
             $('#sidebar').toggleClass("d-none");
             $('#sidebarCollapse').on('click', function () {
-                $("#sidebar").animate({width:'toggle'},200);
+                $("#sidebar").animate({width: 'toggle'}, 200);
             });
         });
     </script>

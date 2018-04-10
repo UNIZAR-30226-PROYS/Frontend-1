@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Bienvenido a Wolfic</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 ">
+
+        <!-- Bootstrap CSS 4.0.0 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/explorar.css">
+
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Cabecera y sidebar fijos -->
+        <nav id="topbar" class="navbar sticky-top">
+            <span id="sidebarCollapse" style="font-size:20px; color:white">
+            </span>
+            <a href="explorar.html">    <!-- Brand/logo -->
+                <img src="images/wolfsound-white.png" style="height:40px;" alt="Wolfic">
+            </a>
+            <a href="usuario.html" class="pr-2 rounded-"> <i class="fa fa-user pt-1 pr-2" style="font-size:20px; color:white;"></i>NombreUsuario</a>
+        </nav>
+        <div class="row">
+            <div class="col-2 float-right">
+                <div id="sidebar" class="sidebar d-none">
+                    <div class="sidebar-header">
+                        <p class="text-center mx-auto">Escuchando</p>
+                    </div>
+                    <ul class="list-unstyled components">
+                        <li>
+                            <a href="#OpcionesSubmenu" data-toggle="collapse" aria-expanded="false">Opciones</a>
+                            <ul class="collapse list-unstyled" id="OpcionesSubmenu">
+                                <li><a href="#">Opc 1</a></li>
+                                <li><a href="#">Opc 2</a></li>
+                                <li><a href="#">Opc 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="listas.html">Mis listas</a></li>
+                        <li><a href="lista.html">Mi audio</a></li>
+                        <li><a href="suscripciones.html">Suscripciones</a></li>
+                    </ul>
+                    <div class="text-white text-center">
+                        <button type="button" class="btn btn-dark">Sube tu música</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENIDO DE LA VISTA -->
+            <div class="col-8">
+
+                <!-- Titulo de la pantalla -->
+                <h2 class="text-left pl-5 pt-3">Explorar</h2>
+                <div class="row pl-5 pt-2 pb-2">
+                    <div class="col-5">
+                        <form class="search-button" action="resultados.html">
+                            <div class="orm-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Buscar ...">
+                                    <span class="input-group-btn search-button">
+                                        <button type="submit" class="btn btn-secondary">
+                                            <span class="fa fa-search" style="font-size:20px;"  ></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            <div class="row pl-5">
+                <div class="col-auto pt-2 pb-3">
+                    <h4>Mis listas</h4>
+                </div>
+                <div class="float-right mr-3 pt-2">
+                    <a href="listas.html"  class="btn btn-link" role="button" >
+                        <span class="fa fa-chevron-right" style="font-size:20px;"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="row pl-5">
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="lista.html" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre lista 1</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="lista.html" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre lista 2</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="lista.html" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre lista 3</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row pt-3 pl-5">
+                <div class="col-auto pt-2 pb-3">
+                    <h4>Listas recomendadas</h4>
+                </div>
+                <div class="float-right mr-3 pt-2">
+                    <a href="listas.html"  class="btn btn-link" role="button" >
+                        <span class="fa fa-chevron-right" style="font-size:20px;"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="row pl-5">
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="lista.html" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre lista rec. 1</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="lista.html" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre lista rec. 2</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="lista.html" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre lista rec. 3</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pl-5 pt-3 pb-1">
+                <div class="col-auto pt-2 pb-3">
+                    <h4>Mi audio</h4>
+                </div>
+                <div class="float-right mr-3 pb-3 pt-2">
+                    <button type="submit" class="btn btn-link">
+                        <span class="fa fa-chevron-right" style="font-size:20px;"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="row pl-5">
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre Mi audio 1</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre Mi audio 2</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre Mi audio 3</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pl-5 pt-3">
+                <div class="col-auto pt-2 pb-3">
+                    <h4>Audio recomendado</h4>
+                </div>
+                <div class="float-right mr-3 pt-2">
+                    <button type="submit" class="btn btn-link">
+                        <span class="fa fa-chevron-right" style="font-size:20px;"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="row pl-5">
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre audio rec. 1</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre audio rec. 2</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-thumbnail h-100">
+                        <a href="" target="_self">
+                            <img src="images/wolf.jpg" class="pt-3" alt="" style="width:20%">
+                            <div class="caption pt-3 pb-2">
+                                <p>Nombre audio rec. 3</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div id="sidebar" class="sidebar col-2 float-right d-none">
+                <div class="sidebar-header">
+                    <p class="text-center mx-auto">Escuchando</p>
+                </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#OpcionesSubmenu" data-toggle="collapse" aria-expanded="false">Opciones</a>
+                        <ul class="collapse list-unstyled" id="OpcionesSubmenu">
+                            <li><a href="#">Opc 1</a></li>
+                            <li><a href="#">Opc 2</a></li>
+                            <li><a href="#">Opc 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="listas.html">Mis listas</a></li>
+                    <li><a href="lista.html">Mi audio</a></li>
+                    <li><a href="suscripciones.html">Suscripciones</a></li>
+                </ul>
+                <div class="text-white text-center">
+                    <button type="button" class="btn btn-dark">Sube tu música</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sidebar').toggleClass("d-block");
+
+        });
+    </script>
+    </body>
+</html>
