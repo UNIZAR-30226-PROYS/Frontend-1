@@ -11,7 +11,6 @@
 ----------------------------------------------------- */
 
 #sidebar {
-    width: 20%;
 	min-height: calc(100vh);
     background: #2853DC;
 	color: white;
@@ -43,21 +42,19 @@
 }
 
 #sidebar ul li a:hover {
-    background: #C7D1F3; 
-	color: white;
     text-underline: none;
 }
 
 .sidebar {
-    /*position: fixed;*/
+    position: fixed;
     top: 20px;
     bottom: 0;
     left: 0;
     z-index: 1000;
     padding: 20px;
-    overflow-x: hidden;
+    /*overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    border-right: 1px solid #eee;
+    */border-right: 1px solid #eee;
 }
 
 /* Sidebar navigation */
