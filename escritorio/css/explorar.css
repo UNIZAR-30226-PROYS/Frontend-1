@@ -4,6 +4,7 @@
 
 #topbar {
     background-color: black;
+    height: 10%;
 }
 
 /* ---------------------------------------------------
@@ -54,7 +55,7 @@
     padding: 20px;
     /*overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    */border-right: 1px solid #eee;
+    border-right: 1px solid #eee;
 }
 
 /* Sidebar navigation */
@@ -94,6 +95,56 @@ ul ul a {
      color: white;
     background-color: #DDE5FF;
     border-color: #C7D1F3; 	
+}
+
+/* ---------------------------------------------------
+    socialbar STYLE
+----------------------------------------------------- */
+
+#socialbar {
+    width: 250px;
+    height: 100vh;
+    position:fixed;
+    top:0px;
+    right:0px;
+    z-index:1030;
+    background: #2853DC;
+    color: white;
+    float:right;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*
+@media (min-width: 768px) { #socialbar { width: 50% ; 	}  }
+@media (min-width: 970px) { #socialbar {	width: 40% ;	}  }
+@media (min-width: 1170px){ #socialbar {	width: 30% ;	}  }
+*/
+
+#socialbar .socialbar-header {
+    padding: 25px;
+    background: #040815;
+    border-bottom: 1px solid white;
+    text-align:left;
+    font-size:20px;
+}
+
+/* socialbar navigation */
+.socialbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*	Button sube tu musica */
+.btn-dark {
+    background: black;
+    color: white;
+}
+
+.btn-dark:hover {
+    color: white;
+    background-color: #DDE5FF;
+    border-color: #C7D1F3;
 }
 
 /* ---------------------------------------------------

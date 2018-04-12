@@ -16,24 +16,24 @@
 	</head>
 	<body>
         <!-- Menu superior y contenido -->
-        <div id="topbar-y-contenido">
-            <nav id="topbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="topbar-y-contenido" class="col-10 pl-0 pr-0">
+            <nav id="topbar" class="navbar navbar-expand-lg navbar-light sticky-top pb-1 pt-0">
                 <a href="marco.html" class="navbar-brand"><!-- Brand/logo -->
-                    <img src="images/wolf.jpg" style="height:30px;"  alt="Wolfic logo">
+                    <img src="images/wolfsound-white.png" style="height:40px;"  alt="Wolfic logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><button type="button" class="btn btn-dark">Sube tu música</button></li>
                         <li class="nav-item"><a class="nav-link" href="#" onclick="">Explorar</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Listas</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Artistas</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Podcasts</a></li>
+                        <li class="nav-item"><button type="button" class="btn btn-primary ml-1 mt-1">Sube tu música</button></li>
                     </ul>
                 </div>
-                <a href="usuario.html" > <i class="fa fa-user pt-1" style="font-size:20px;"></i>Nombre Usuario</a>
+                <a href="usuario.html" > <i class="fa fa-user pt-1 pr-1" style="font-size:20px;"></i>Nombre Usuario</a>
             </nav>
 
             <!-- CONTENIDO DE LA VISTA -->
@@ -45,9 +45,14 @@
         </div>
 
         <!-- Socialbar o iniciar sesion -->
-        <div id="socialbar" class="socialbar">
-            <div class="socialbar-header">
-                Gente que sigues&nbsp;<i class="fa fa-users" style="font-size:30px;position:absolute;top:25px;right:20px;"></i>
+        <div id="socialbar" class="socialbar col-2">
+            <div class="socialbar-header pt-0 pb-2" style="background-color: black">
+                <div class="row">
+                    <ul>
+                        <li class="pl-0">Gente que sigues&nbsp;</li>
+                        <i class="fa fa-users" style="height: 40px;"></i>
+                    </ul>
+                </div>
             </div>
 
             <div class="text-white text-center">
