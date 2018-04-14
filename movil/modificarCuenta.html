@@ -9,7 +9,7 @@
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
 
 		<!-- CSS -->
-		<link rel="stylesheet" href="css/registrarse_iniciar_sesion.css">
+		<link rel="stylesheet" href="css/modificarCuenta.css">
 
         <!-- Font Awesome CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -50,69 +50,24 @@
 
         <!-- CONTENIDO DE LA VISTA -->
         <div class="container mb-3">
-			<div class="pt-1">
-                <img class="d-block mx-auto" src="images/wolfsound.png" style="max-width: 200px"/>
-            </div>
-
-			<!--  https://getbootstrap.com/docs/4.0/components/navs/ -->
-			<ul class="nav nav-pills nav-fill" id="pills-tab" >
-				<li class="nav-item">
-					<a class="nav-link active" id="iniciar-sesion-tab" data-toggle="pill" href="#iniciar-sesion" role="tab" aria-controls="iniciar-sesion" aria-selected="true">Iniciar Sesion</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="registrarse-tab" data-toggle="pill" href="#registrarse" role="tab" aria-controls="registrarse" aria-selected="false">Registrarse</a>
-				</li>
-			</ul>
-
-			<div class="tab-content" id="myTabContent"> 		<!-- Sino aparece uno debajo de otro -->
-			
-				<!-- Iniciar Sesion -->
-				<div class="tab-pane fade show active" id="iniciar-sesion" role="tabpanel" aria-labelledby="iniciar-sesion-tab">
-					<form class="needs-validation" action="explorar.html" novalidate>
-						<h4 class="text-center py-3">Iniciar sesión en WolfSound</h4>
-						
-						<div class="form-group">
-							<label for="nombre_usuario">Nombre de usuario</label>
-							<input type="text" class="form-control" id="nombre_usuario" placeholder="usuario_123" required>
-							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
-						</div>
-							
-						<div class="form-group">
-							<label for="contrasenya">Contraseña</label>
-							<input type="password" class="form-control" id="contrasenya" placeholder="*****" required>
-							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
-						</div>
-                        <div class="row">
-                            <div class="col-6">
-                                <button type="submit" class="col btn btn-primary ">Iniciar sesión</button>
-                            </div>
-                            <div class="col-6">
-                                <button type="reset" class="col btn btn-outline-primary">Limpiar</button>
-                            </div>
-                        </div>
-					</form>	
-				</div>
 			
 				<!-- Registrarse -->
-				<div class="tab-pane fade" 	id="registrarse" role="tabpanel" aria-labelledby="registrarse-tab">
-		
-					<form class="needs-validation" action="explorar.html" novalidate>
-						<h4 class="text-center py-3">Registrarse en WolfSound</h4>
+					<form class="needs-validation" action="/action_page.php" novalidate>
+						<h4 class="text-center py-3">Modificar Información del perfil</h4>
+						<label for="nombre">Nombre</label>
+						<div class="form-group">
+							 <div class="form-row">
+								<div class="col-6">
+									<input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+								</div>
+								<div class="col">
+									<input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
+								</div>
+							 </div>
+						</div>
 						<div class="form-group">
 							<label for="nombre_usuario">Nombre de usuario</label>
 							<input type="text" class="form-control" id="nombre_usuario" placeholder="usuario_123" required>
-							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
-						</div>
-						
-						<div class="form-group">
-							<label for="contrasenya">Contraseña</label>
-							<input type="password" class="form-control" id="contrasenya" placeholder="*****" required>
-							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
-						</div>
-						
-						<div class="form-group">
-							<label for="confirmar_contrasenya"> Confirmar Contraseña</label>
-							<input type="password" class="form-control" id="confirmar_contrasenya" placeholder="*****" required>
 							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
 						</div>
 
@@ -122,20 +77,19 @@
 							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
 						</div>
 
-
-
 						<div class="form-group">
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-								<label class="form-check-label" for="invalidCheck">
-									Acepto los <a href="#">terminos y condiciones</a> de uso.
-								</label>
-							</div>
+							<label for="visperfil">Visibilidad del perfil</label>
+							<select class="form-control" id="visperfil" required>
+								<option value="" selected disabled>Seleccione la visibilidad de su perfil</option>
+								<option>Privado</option>
+								<option>Público</option>
+							</select>
 						</div>
+
 
                         <div class="row">
                             <div class="mx-auto col-6">
-                                <button type="submit" class="col btn btn-primary ">Enviar</button>
+                                <button type="submit" class="col btn btn-primary ">Modificar</button>
                             </div>
                             <div class="mx-auto col-6">
                                 <button type="reset" class="col btn btn-outline-primary">Limpiar</button>
@@ -143,8 +97,8 @@
                         </div>
 					</form>
 				</div>
-			</div>
-		</div>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
