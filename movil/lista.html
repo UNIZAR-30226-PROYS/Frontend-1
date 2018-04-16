@@ -78,7 +78,7 @@
                     <h6 class="media-heading">usuario</h6>
                 </div>
                 <div class="media-right">
-                    <button type="button" class="btn btn-default ">
+                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#modalOrden">
                         <span class="fa fa-list-ol" style="font-size:20px; "></span>
                     </button>
                     <button type="button" class="btn btn-default ">
@@ -101,7 +101,7 @@
                     <h6 class="media-heading">usuario</h6>
                 </div>
                 <div class="media-right">
-                    <button type="button" class="btn btn-default ">
+                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#modalOrden">
                         <span class="fa fa-list-ol" style="font-size:20px; "></span>
                     </button>
                     <button type="button" class="btn btn-default ">
@@ -124,7 +124,7 @@
                     <h6 class="media-heading">usuario</h6>
                 </div>
                 <div class="media-right">
-                    <button type="button" class="btn btn-default ">
+                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#modalOrden">
                         <span class="fa fa-list-ol" style="font-size:20px; "></span>
                     </button>
                     <button type="button" class="btn btn-default ">
@@ -146,7 +146,7 @@
                     <h6 class="media-heading">usuario</h6>
                 </div>
                 <div class="media-right">
-                    <button type="button" class="btn btn-default ">
+                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#modalOrden">
                         <span class="fa fa-list-ol" style="font-size:20px; "></span>
                     </button>
                     <button type="button" class="btn btn-default ">
@@ -157,6 +157,29 @@
         </a>
     </div>
 </div> <!-- Container -->
+
+<!-- Modal1 -->
+<div class="modal fade" id="modalOrden" tabindex="-1" role="dialog" aria-labelledby="modalOrden" aria-hidden="true">
+    <div class= "modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <form action = "lista.html">
+                    <div class="form-group">
+                        <label for="posicion">Nueva posicion de la cancion</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="posicion" placeholder="3" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

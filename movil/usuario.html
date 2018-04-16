@@ -51,11 +51,13 @@
         <div class="container mb-3">
             <div class="row pt-3">
                 <div class="col-4">
-                    <button type="button" class="btn btn-primary mt-2" style="background: #2853DC;  color:white;">Sube<br/>tu<br/>musica</button>
+                    <a href = "subirCancion.html">
+                        <button type="button" class="btn btn-primary mt-2" style="background: #2853DC;  color:white;">Sube<br/>tu<br/>musica</button>
+                    </a>
                 </div>
                 <div class="col-4">
                     <div class="img-responsive text-center">
-                        <img src="images/user.svg" style="height: 80px;" alt="Usuario">
+                        <img src="images/user.svg" style="height: 80px;" alt="Usuario" data-toggle="modal" data-target="#modalImagen">
                         <p>USUARIO</p>
                     </div>
                 </div>
@@ -138,7 +140,7 @@
             </div>
         </div> <!-- Container -->
 
-        <!-- Modal -->
+        <!-- Modal1 -->
         <div class="modal fade" id="modalSuscribir" tabindex="-1" role="dialog" aria-labelledby="modalSuscribir" aria-hidden="true">
             <div class= "modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -155,6 +157,28 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Suscribirse</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal2 -->
+        <div class="modal fade" id="modalImagen" tabindex="-1" role="dialog" aria-labelledby="modalImagen" aria-hidden="true">
+            <div class= "modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <form action = "usuario.html">
+                            <div class="form-group">
+                                <label for="imagenPerfil">Introduzca su nueva imagen de perfil.</label>
+                                <div class="input-group">
+                                    <input type="file" class="form-control-file" id="imagenPerfil">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Aceptar</button>
                         </form>
                     </div>
                 </div>

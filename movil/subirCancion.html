@@ -9,7 +9,7 @@
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
 
 		<!-- CSS -->
-		<link rel="stylesheet" href="css/modificarCuenta.css">
+		<link rel="stylesheet" href="css/subirCancion.css">
 
         <!-- Font Awesome CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -51,51 +51,41 @@
         <!-- CONTENIDO DE LA VISTA -->
         <div class="container mb-3">
 			
-				<!-- Mosificar Cuenta -->
-					<form class="needs-validation" action="/action_page.php" novalidate>
-						<h4 class="text-center py-3">Modificar Información del perfil</h4>
-						<label for="nombre">Nombre</label>
+				<!-- Subir Cancion -->
+
+					<form class="needs-validation" action="lista.html" novalidate>
+						<h4 class="text-center py-3">Sube tu canción</h4>
 						<div class="form-group">
-							 <div class="form-row">
-								<div class="col-6">
-									<input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-								</div>
-								<div class="col">
-									<input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
-								</div>
-							 </div>
-						</div>
-						<div class="form-group">
-							<label for="nombre_usuario">Nombre de usuario</label>
-							<input type="text" class="form-control" id="nombre_usuario" placeholder="usuario_123" required>
+							<label for="nombre_cancion">Nombre de la canción</label>
+							<input type="text" class="form-control" id="nombre_cancion" placeholder="Jailhouse Rock" required>
 							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
 						</div>
 
 						<div class="form-group">
-							<label for="correo">Direccion de correo</label>
-							<input type="email" class="form-control" id="correo" placeholder="user@mail .." required>
+							<label for="genero_musical">Genero Musical</label>
+							<input type="text" class="form-control" id="genero_musical" placeholder="Rock" required>
 							<div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
 						</div>
 
 						<div class="form-group">
-							<label for="visperfil">Visibilidad del perfil</label>
-							<select class="form-control" id="visperfil" required>
-								<option value="" selected disabled>Seleccione la visibilidad de su perfil</option>
-								<option>Privado</option>
-								<option>Público</option>
-							</select>
+							<label for="album">Album</label>
+							<input type="text" class="form-control" id="album" placeholder = "Opcional">
+							</input>
 						</div>
 
+						<div class="form-group">
+							<label for="cancion">Seleccione la cancion(Formato mp3)</label>
+							<input type="file" class="form-control-file" id="cancion" required>
+                            <div class="invalid-feedback">Seleccione la canción.</div>
+						</div>
 
                         <div class="row">
                             <div class="mx-auto col-6">
-                                <button type="submit" class="col btn btn-primary ">Modificar</button>
-                            </div>
-                            <div class="mx-auto col-6">
-                                <button type="reset" class="col btn btn-outline-primary">Limpiar</button>
+                                <button type="submit" class="col btn btn-primary ">Subir</button>
                             </div>
                         </div>
 					</form>
+
 				</div>
 
 
@@ -112,28 +102,27 @@
             });
         });
     </script>
-	
-	<script>	
-		/* Derechos de autor  : https://getbootstrap.com/docs/4.0/components/forms/#validation */
-		
-		// Example starter JavaScript for disabling form submissions if there are invalid fields
-		(function() {
-		  'use strict';
-		  window.addEventListener('load', function() {
-			// Fetch all the forms we want to apply custom Bootstrap validation styles to
-			var forms = document.getElementsByClassName('needs-validation');
-			// Loop over them and prevent submission
-			var validation = Array.prototype.filter.call(forms, function(form) {
-			  form.addEventListener('submit', function(event) {
-				if (form.checkValidity() === false) {
-				  event.preventDefault();
-				  event.stopPropagation();
-				}
-				form.classList.add('was-validated');
-			  }, false);
-			});
-		  }, false);
-		})();
-	</script>
+        <script>
+            /* Derechos de autor  : https://getbootstrap.com/docs/4.0/components/forms/#validation */
+
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                        form.addEventListener('submit', function(event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
     </body>
 </html>
