@@ -26,10 +26,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="">Explorar</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Listas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Artistas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Podcasts</a></li>
+                        <li class="nav-item"><a id="nav-explorar" class="nav-link" href="explorar.html">Explorar</a></li>
+                        <li class="nav-item"><a id="nav-listas" class="nav-link" href="listas.html">Listas</a></li>
+                        <li class="nav-item"><a id="nav-artistas" class="nav-link" href="artistas.html">Artistas</a></li>
+                        <li class="nav-item"><a id="nav-podcasts" class="nav-link" href="podcasts.html">Podcasts</a></li>
                         <li class="nav-item"><button type="button" class="btn btn-primary ml-1 mt-1">Sube tu música</button></li>
                     </ul>
                 </div>
@@ -37,14 +37,15 @@
             </nav>
 
             <!-- CONTENIDO DE LA VISTA -->
-            <div id="contenido">
+            <div id="contenido" about="a">
                 Contenido
                 <!-- Cargar aqui la pagina que corresponda -->
                 <div style="height:2000px"><!-- Div de prueba para scroll --></div>
             </div>
         </div>
 
-        <!-- Socialbar o iniciar sesion -->
+        <!-- Socialbar o iniciar sesion
+         TODO (JSP): si estas logueado mostrar socialbar, si no login/register -->
         <div id="socialbar" class="socialbar col-2">
             <div class="socialbar-header pt-0 pb-2" style="background-color: black">
                 <div class="row">
@@ -67,6 +68,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+    <script src="../Scripts/navegacion.js"></script>
+    <script>$("#contenido").load('explorar.html'); history.replaceState('explorar.html',"",'explorar.html');</script>
     </body>
 </html>
