@@ -5,38 +5,41 @@
 
 var dominio = 'http://localhost/';
 
-$(document).ready(function(){
+/* Invocada cada vez que hay que cambiar el contenido de la pagina */
+function navegar(e){
+    if(!$(this).hasClass('nav-profile-link')) {
+        e.preventDefault();
 
-    //No se deberia poder acceder a los ficheros sin marco
-    if($("#contenido").length === 0){
-        window.location = dominio;
-    }
-
-    $('body').on('click','a',function(e){
-        e.preventDefault(); //Prevenir comportamiento por defecto
-
-        try{
+        try {
             var origen = window.location.href;
             var destino = $(this).attr('href');
 
-            if(origen!==destino) { //todo: revisar esto para no insertar nuevas entradas en el historial si vas a la misma pagina
+            if (origen !== destino) { //todo: revisar esto para no insertar nuevas entradas en el historial si vas a la misma pagina
                 // Cargar contenido
                 $("#contenido").load(destino);
 
                 // Cambiar URL y titulo
-                setTimeout(function(){ //todo: mejorar esto para mostrar el titulo directamente y no depender de un timeout de 100ms
-                    window.history.pushState({"html":destino,"titulo":$('#tituloNuevo').attr('value')}, "", destino);
+                setTimeout(function () { //todo: mejorar esto para mostrar el titulo directamente y no depender de un timeout de 100ms
+                    window.history.pushState({
+                        "html": destino,
+                        "titulo": $('#tituloNuevo').attr('value')
+                    }, "", destino);
                     document.title = $('#tituloNuevo').attr('value');
-                },100);
+                }, 100);
             }
-        }catch($ex){
+        } catch ($ex) {
             window.console && console.log($ex);
-        }finally{
+        } finally {
             return false;
         }
-    })
+    }
+}
+
+$(document).ready(function(){
+    $('body').on('click','a',navegar);
 });
 
+/* Gestion del historial del navegador */
 window.onpopstate = function(e){
     if(e.state){
         $("#contenido").load(e.state.html);
