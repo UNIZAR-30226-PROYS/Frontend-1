@@ -135,5 +135,13 @@ form.search-button button {
 
 }
 
-
-
+.lleva-bocadillo:before{
+    content:"";
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin: -13px 0 0 -76px;
+    border-bottom: 30px solid transparent;
+    border-right: 28px solid rgba(0,0,0,.125);
+    border-left: 28px solid transparent;
+}
