@@ -41,12 +41,18 @@
                     </div>
                     </div>
                 </div>
-                <div class="media">
+                <div class="media mt-2">
                     <div class="media-left" style="padding-right:15px">
                         <img src="images/user.svg" style="width:40px;" alt="...">
                     </div>
                     <div class="media-body">
-                        Caja para comentar
+                        <form class="comentar-actividad" method="get" action="#">
+                            <!-- TODO (JSP): en value poner el id de la actividad que se liste -->
+                            <input type="hidden" name="id" value="id_actividad" />
+                            <input  class="form-control" type="text" name="comentario"
+                                   placeholder="Escribe un comentario..."
+                                   required autocomplete="off" />
+                        </form>
                     </div>
                 </div>
             </div>
