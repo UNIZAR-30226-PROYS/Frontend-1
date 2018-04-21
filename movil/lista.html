@@ -14,36 +14,30 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 <nav id="topbar" class="navbar sticky-top">
-                <span id="sidebarCollapse" style="font-size:20px; color:white">
-                    &#9776; <!-- Icono de side-menu -->
-                </span>
-    <a href="explorar.html">	<!-- Brand/logo -->
-        <img src="images/wolfsound-white.png" style="height:40px;"  alt="Wolfic">
+            <span id="sidebarCollapse" style="font-size:20px; color:white">
+                &#9776; <!-- Icono de side-menu -->
+            </span>
+    <a href="explorar.html">    <!-- Brand/logo -->
+        <img src="images/wolfsound-white.png" style="height:40px;" alt="Wolfic">
     </a>
-    <a href="usuario.html" > <i class="fa fa-user pt-1" style="font-size:20px; color:white;"></i></a>
+    <a href="usuario.html"> <i class="fa fa-user pt-1" style="font-size:20px; color:white;"></i></a>
 </nav>
 
-<div id="sidebar" class="sidebar d-none">
+<div id="sidebar" class="d-none">
     <div class="sidebar-header">
         <p class="text-center mx-auto">Escuchando</p>
     </div>
     <ul class="list-unstyled components">
-        <li>
-            <a href="#OpcionesSubmenu" data-toggle="collapse" aria-expanded="false">Opciones</a>
-            <ul class="collapse list-unstyled" id="OpcionesSubmenu">
-                <li><a href="#">Opc 1</a></li>
-                <li><a href="#">Opc 2</a></li>
-                <li><a href="#">Opc 3</a></li>
-            </ul>
-        </li>
+
         <li><a href="listas.html">Mis listas</a></li>
         <li><a href="lista.html">Mi audio</a></li>
         <li><a href="suscripciones.html">Suscripciones</a></li>
     </ul>
     <div class="text-white text-center">
-        <button type="button" class="btn btn-dark">Sube tu música</button>
+        <a href="subirCancion.html"><button type="button" class="btn btn-dark" >Sube tu música</button></a>
     </div>
 </div>
 
