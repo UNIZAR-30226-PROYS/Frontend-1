@@ -7,10 +7,10 @@
     <div class="row pl-4 pt-2 pb-2">
         <div class="col-7">
             <!-- TODO: ajax para enviar este formulario sin recargar la pagina -->
-            <form class="search-button" action="resultados.html">
+            <form id="formBuscar" class="search-button" action="resultados.html">
                 <div class="orm-group">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Buscar ...">
+                        <input id="textoBuscar" name="b" type="text" class="form-control" placeholder="Buscar ..." autocomplete="off">
                         <span class="input-group-btn search-button">
                             <button type="submit" class="btn btn-secondary">
                                 <span class="fa fa-search" style="font-size:20px;"  ></span>
@@ -234,3 +234,4 @@
     </div>
 </div>
 </div>
+<script src="../Scripts/busqueda.js"></script>
