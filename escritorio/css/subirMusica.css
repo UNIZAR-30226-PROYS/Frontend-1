@@ -1,0 +1,208 @@
+/* ---------------------------------------------------
+    NAVIGATION BAR
+----------------------------------------------------- */
+
+#topbar {
+    background-color: black;
+    height: 10%;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+	min-height: calc(100vh);
+    background: #2853DC;
+	color: white;
+}
+
+/* 
+@media (min-width: 768px) { #sidebar { width: 50% ; 	}  } 
+@media (min-width: 970px) { #sidebar {	width: 40% ;	}  }
+@media (min-width: 1170px){ #sidebar {	width: 30% ;	}  }
+*/
+
+#sidebar .sidebar-header {
+    padding: 50px;
+    background: #040815;
+    border-bottom: 1px solid white;
+}
+
+#sidebar ul.components {
+    padding: 20px 0px 15px;
+    border-bottom: 1px solid white;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block; 
+	color: white;
+    text-underline: none;
+}
+
+#sidebar ul li a:hover {
+    text-underline: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    /*overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.sidebar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+/* Options arrow-down*/	
+a[data-toggle="collapse"] {
+    position: relative;
+}
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    display: block;
+    position: absolute;
+    right: 20px;
+	content:"\f078";
+    font-family: FontAwesome;
+}
+
+ul ul a {
+    padding-left: 30px !important;
+}
+
+/*	Button sube tu musica */
+.btn-dark {
+	background: black;
+	color: white;
+}
+
+.btn-dark:hover {
+     color: white;
+    background-color: #DDE5FF;
+    border-color: #C7D1F3; 	
+}
+
+/* ---------------------------------------------------
+    socialbar STYLE
+----------------------------------------------------- */
+
+#socialbar {
+    width: 250px;
+    height: 100vh;
+    position:fixed;
+    top:0px;
+    right:0px;
+    z-index:1030;
+    background: #2853DC;
+    color: white;
+    float:right;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*
+@media (min-width: 768px) { #socialbar { width: 50% ; 	}  }
+@media (min-width: 970px) { #socialbar {	width: 40% ;	}  }
+@media (min-width: 1170px){ #socialbar {	width: 30% ;	}  }
+*/
+
+#socialbar .socialbar-header {
+    padding: 25px;
+    background: #040815;
+    border-bottom: 1px solid white;
+    text-align:left;
+    font-size:20px;
+}
+
+/* socialbar navigation */
+.socialbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*	Button sube tu musica */
+.btn-dark {
+    background: black;
+    color: white;
+}
+
+.btn-dark:hover {
+    color: white;
+    background-color: #DDE5FF;
+    border-color: #C7D1F3;
+}
+
+/* ---------------------------------------------------
+    Explorar
+----------------------------------------------------- */
+
+h3 {
+	font-size: 20px !important;
+}
+	
+
+@media (min-width: 768px) {
+	h3 {
+		font-size: 24px !important;
+	}
+}
+
+@media (min-width: 970px) {
+	h3 {
+		font-size: 28px !important;
+	}
+}
+
+@media (min-width: 1170px) {
+	h3 {
+		font-size: 32px !important;
+	}
+}
+
+
+/* ---------------------------------------------------
+    Search button
+----------------------------------------------------- */
+
+form.search-button button {
+    background: #2853DC;	/* Blue */
+    color: white;
+}
+
+/* ---------------------------------------------------
+    Thumbnails
+----------------------------------------------------- */
+.img-thumbnail{
+	 text-align:center;
+}
+
+
+/* ---------------------------------------------------
+    Listas
+----------------------------------------------------- */
+
+.img-thumbnail:hover {
+   /* background-image: url('http://www.online-image-editor.com//styles/2014/images/example_image.png'); */
+    background-color: #D8D6D6; /* Grey */
+}
+.caption:hover {
+
+}
+
+
+

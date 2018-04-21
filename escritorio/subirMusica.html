@@ -1,0 +1,58 @@
+<div id="tituloNuevo" value="Wolfic - Explorar" style="display:none;"></div>
+<!-- CONTENIDO DE LA VISTA -->
+<div class="col-12 d-block">
+
+    <!-- Titulo de la pantalla -->
+    <h2 class="text-left pl-4 pt-2">Subir una canción</h2>
+    <div class="row pl-4 pt-2 pb-2">
+        <div class="col-7">
+            <div class="container mb-3">
+
+                <!-- Subir Cancion -->
+                <!-- TODO: ajax para enviar este formulario sin recargar la pagina -->
+                <form action="lista.html" >
+                    <div class="form-group">
+                        <label for="nombre_cancion">Nombre de la canción</label>
+                        <input type="text" class="form-control" id="nombre_cancion" placeholder="Jailhouse Rock" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="genero_musical">Genero Musical</label>
+                        <input type="text" class="form-control " id="genero_musical" placeholder="Rock" required>
+                        <div class="invalid-feedback"> No puedes dejar este campo en blanco. </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="album">Album</label>
+                        <input type="text" class="form-control " id="album" placeholder = "Opcional">
+                        </input>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cancion">Seleccione la cancion(Formato mp3)</label>
+                        <input type="file" class="form-control-file " id="cancion" accept=".mp3"required>
+                        <div class="invalid-feedback">Seleccione la canción.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="portada">Seleccione la portada(Formato de imagen)</label>
+                        <input type="file" class="form-control-file " id="portada" accept=image/*">
+                        <div class="invalid-feedback">Seleccione la canción.</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mx-auto col-6">
+                            <button type="submit" class="col btn btn-primary ">Subir</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</div>
