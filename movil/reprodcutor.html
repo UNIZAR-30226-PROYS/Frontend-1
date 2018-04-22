@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Bienvenido a Wolfic</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 ">
+
+		<!-- Bootstrap CSS 4.0.0 -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/reproductor.css">
+
+        <!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="js/reprodutor_v2.js"></script>
+		 <!--  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script> -->
+		 <!-- <script type="text/javascript" src="js/html5slider.js"></script>	-->
+		
+	</head>
+
+<body>
+
+        <!-- Cabecera y sidebar fijos -->
+        <nav id="topbar" class="navbar sticky-top">
+            <span id="sidebarCollapse" style="font-size:20px; color:white">
+                &#9776; <!-- Icono de side-menu -->
+            </span>
+            <a href="explorar.html">    <!-- Brand/logo -->
+                <img src="" style="height:40px;" alt="Wolfic">
+            </a>
+            <a href="usuario.html"> <i class="fa fa-user pt-1" style="font-size:20px; color:white;"></i></a>
+        </nav>
+
+        <div id="sidebar" class="d-none">
+            <div class="sidebar-header">
+                <p class="text-center mx-auto">Escuchando</p>
+            </div>
+            <ul class="list-unstyled components">
+
+                <li><a href="listas.html">Mis listas</a></li>
+                <li><a href="lista.html">Mi audio</a></li>
+                <li><a href="suscripciones.html">Suscripciones</a></li>
+            </ul>
+            <div class="text-white text-center">
+               <a href="subirCancion.html"><button type="button" class="btn btn-dark" >Sube tu música</button></a>
+            </div>
+        </div>
+
+        <!-- CONTENIDO DE LA VISTA -->
+        <div class="container mb-3">
+		
+			 <!-- CONTENIDO REPRODUCTOR -->
+			 <div class="container py-3">
+			 
+				<div class="container">
+				  <div class="row ">
+					<div class="col-2 ">
+						<a class="btn">	<i class="fa fa-heart" id="like" style="font-size:20px;" ></i> </a>
+					</div>
+					<div class="col-8 text-center">
+						<div id="nowPlay">
+							<h5> <span class="right" id="npTitle"></span> </h5>
+						</div>
+					</div>
+					<div class="col-2">
+						<a class="btn">	<i class="fa fa-align-justify" style="font-size:20px;" ></i> </a>
+					</div>
+				  </div>
+				</div>
+
+				<div class="container-fluid">
+					<div class="embed-responsive embed-responsive-1by1">
+						<audio controls id="audio1" class="embed-responsive-item"></audio>	
+					</div>
+				</div>
+				
+				<div class="container-fluid ">
+				  <div class="row text-center" >
+					<div class="col ">
+						 <button type="button" id="btnRandom" class="btn btn-dark">
+							   <span class="fa fa-random" style="font-size:20px;"> </span>
+						</button>
+					</div>
+					<div class="col">
+						<button type="submit" id="btnPrev" class="btn btn-dark"">
+							 <span class="fa fa-step-backward" style="font-size:20px;"> </span>
+						</button>
+					</div>
+					<div class="col">
+						<button type="submit" id="btnNext" class="btn btn-dark">
+							 <span class="fa fa-step-forward" style="font-size:20px;"> </span>
+						</button>
+					</div>
+					<div class="col">
+						<button type="button" id="btnRepeat" class="btn btn-dark ">
+							 <span class="fa fa-repeat" style="font-size:20px;"> </span>
+						</button>
+					</div>
+				  </div>
+				</div>
+			</div>	<!-- FIN CONTENIDO REPRODUCTOR -->
+		</div>
+		<script>
+		$('#btnRepeat, #like').click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active')
+			} else {
+				$(this).addClass('active')
+			}
+		});
+		</script>
+		
+		<script>
+			$(document).ready(function () {
+				$('#sidebar').hide();
+				$('#sidebar').toggleClass("d-none");
+				$('#sidebarCollapse').on('click', function () {
+					$("#sidebar").animate({width: 'toggle'}, 200);
+				});
+			});
+		</script>
+	
+	</body>
+</html>
