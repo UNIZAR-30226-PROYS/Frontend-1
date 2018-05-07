@@ -71,12 +71,18 @@ body{
     background: #040815;
     text-align:left;
     font-size:20px;
+    height:51px;    /*como topbar */
 }
 
 /* socialbar navigation */
 .socialbar {
     padding-left: 0;
     padding-right: 0;
+}
+
+.socialbarM {
+    width: 92%;
+    margin:auto;
 }
 
 /*	Button sube tu musica */
